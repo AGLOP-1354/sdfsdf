@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- reset css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+</head>
+<style>
+  /* COMMON */
+  p, h2, button, h3 {
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    height: 100vh;
+    margin: 0 22.65625vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EDF1F5;
+  }
+  .email-body{
+    height: auto;
+    box-sizing: border-box;
+    padding: 5.1724137vh 4.6875vw;
+    background: #FFFFFF;
+    border-radius: 4px;
+  }
+
+  /* HEADER */
+  header{
+    height: auto;
+    border-bottom: 1px solid #E0E0E0;
+  }
+  header img {
+    width: 6.6689453125vw;
+    min-width: 68.29px;
+    height: 3.448275vh;
+    min-height: 20px;
+    margin-bottom: 1.03vh;
+  }
+  header p {
+    line-height: 2.75862vh;
+    font-size: 1.724137vh;
+    color: #757575;
+    font-weight: 400;
+    margin-bottom: 1.03vh;
+  }
+
+  /* content */
+  .content-container {
+    color: #434343;;
+  }
+  .content-container h2 {
+    line-height: 4.4137931vh;
+    margin: 4.137931vh 0;
+    font-size: 2.75862vh;
+    font-weight: bold;
+  }
+  .content-container .content {
+    margin-bottom: 4.137931vh;
+  }
+  .content-container .content p {
+    line-height: 3.31034vh;
+    font-size: 2.068965vh;
+    font-weight: 400;
+  }
+
+  /* btn group */
+  .btn-group {
+    text-align: center;
+  }
+  .btn-group a button{
+    width: 100%;
+    height: 8.275862vh;
+    line-height: 8.275862vh;
+    background: #40A9FF;
+    border-radius: 2px;
+    font-size: 2.4137931vh;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    margin-bottom: 1.37931vh;
+    cursor: pointer;
+  }
+  .btn-group p {
+    font-size: 2.068965vh;
+    color: #757575;
+  }
+  .btn-group p a {
+    color: #40A9FF;
+    cursor: pointer;
+  }
+
+  /* FOOTER */
+  .email-footer {
+    text-align: center;
+    margin: 2.75862vh 0;
+  }
+  .email-footer .icons {
+    width: 72px;
+    margin: 0 auto 1.37931vh auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .email-footer .icons a img{
+    width: 16px;
+    height: 16px;
+  }
+  .email-footer h3{
+    line-height: 2.75862vh;
+    font-size: 1.724137vh;
+    font-weight: 700;
+    color: #40A9FF;
+    margin-bottom: 1.37931vh;
+  }
+  .email-footer .address {
+    line-height: 2.75862vh;
+    font-size: 1.72413793vh;
+    font-weight: 400;
+    margin-bottom: 0.344827vh;
+    color: #757575;
+  }
+  .email-footer .tel {
+    line-height: 2.75862vh;
+    font-size: 1.72413793vh;
+    font-weight: 400;
+    color: #757575;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 680px) {
+    body{
+      margin: 0 11.328125vw;
+    }
+  }
+
+</style>
+<body>
+  <div class="email-container">
+    <div class="email-body">
+
+      <header>
+        <img src="https://jober-api-static.s3.ap-northeast-2.amazonaws.com/LOGO.png" alt="">
+        <p>서명과 문구 위치 지정이 필요없는 간편한 전자계약 자버!</p>
+      </header>
+  
+      <article class="content-container">
+        <h2>{문서제목} 서명이 완료되었습니다.</h2>
+        <div class="content">
+          <p>{대표자명} 님과 {직원명} 님의 서명이 완료되었습니다.</p>
+          <p>아래 버튼을 누르고 서명이 완료된 내용을 확인해보세요.</p>
+          <p>이 파일은 언제든지 다운로드 및 출력이 가능합니다.</p>
+        </div>
+      </article>
+  
+      <article class="btn-group">
+        <a href="#"><button>내용 확인하러 가기</button></a>
+        <p>링크가 작동하지 않으면 <a href="#">클릭</a>하세요.</p>
+      </article>
+  
+    </div>
+
+    <footer class="email-footer">
+      <div class="icons">
+        <a href="https://www.youtube.com/channel/UC_NRW0mOhC6DwkwvmIR2GbQ"><img src="https://jober-api-static.s3.ap-northeast-2.amazonaws.com/Youtube.png" alt="youtube-icon"></a>
+        <a href="mailto:contact@jober.io"><img src="https://jober-api-static.s3.ap-northeast-2.amazonaws.com/Mail.png" alt="mail-icon"></a>
+        <a href="https://jober.io"><img src="https://jober-api-static.s3.ap-northeast-2.amazonaws.com/Link.png" alt="link-icon"></a>
+      </div>
+      <h3>직원과 신뢰를 체결하세요.</h3>
+      <p class="address">서울 특별시 마포구 마포대로 122, 18층(공덕동, 프론트원)</p>
+      <a href="tel:02-6402-0508" class="tel">02-6402-0508</a>
+    </footer>
+  </div>
+</body>
+</html>
